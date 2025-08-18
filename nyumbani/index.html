@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nyumbani Kwehu Developers | Coastal Real Estate, Kilifi</title>
+    <meta name="description" content="Nyumbani Kwehu Developers – premier coastal real estate agency in Kilifi. Homes and developments for sale and rent across Nyali, Shanzu, Kilifi, Mtwapa, Vipingo. Book viewings and take virtual tours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+</head>
+<body data-page="home">
+    <header class="nk-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Nyumbani Kwehu Developers" onerror="this.src='https://placehold.co/52x52?text=NKD'" />
+                <span>Nyumbani Kwehu Developers</span>
+            </a>
+            <nav class="nk-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sale.html">For Sale</a></li>
+                    <li><a href="rent.html">For Rent</a></li>
+                    <li><a href="developments.html">Developments</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Nyumbani Insider</button>
+                        <ul class="dropdown-menu" aria-label="submenu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="research.html">Market Research</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a class="phone" href="tel:+254740000000">+254 740 000 000</a>
+                <button class="btn btn-accent" data-open-booking>Book a Viewing</button>
+            </div>
+            <button class="hamburger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu" hidden>
+            <nav aria-label="Mobile">
+                <a href="index.html" class="active">Home</a>
+                <a href="sale.html">For Sale</a>
+                <a href="rent.html">For Rent</a>
+                <a href="developments.html">Developments</a>
+                <details>
+                    <summary>Nyumbani Insider</summary>
+                    <a href="blog.html">Blog</a>
+                    <a href="news.html">News</a>
+                    <a href="research.html">Market Research</a>
+                </details>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+                <a class="btn btn-accent full" href="#" data-open-booking>Request more info</a>
+                <a class="btn btn-outline full" href="https://wa.me/254740000000?text=Hi%20Nyumbani%20Kwehu%20Developers%2C%20I%20would%20like%20to%20book%20a%20viewing." target="_blank" rel="noopener">WhatsApp us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Coastal Living, Reimagined</h1>
+                    <p>Premium homes and developments across Nyali, Shanzu, Kilifi, Mtwapa, and Vipingo. Browse listings in Kenyan shillings and book immersive virtual tours.</p>
+                    <div class="hero-cta">
+                        <a class="btn btn-accent" href="sale.html">Browse For Sale</a>
+                        <a class="btn btn-outline" href="rent.html">Browse For Rent</a>
+                    </div>
+                    <div class="quick-contact">
+                        <span>Call us:</span> <a href="tel:+254740000000">+254 740 000 000</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img src="assets/img/hero-exterior.jpg" alt="Coastal home" onerror="this.src='https://placehold.co/720x480?text=Coastal+Home'" />
+                </div>
+            </div>
+            <div class="search-panel container">
+                <form id="quickSearch" class="filters" action="sale.html">
+                    <select name="location" aria-label="Location">
+                        <option value="">Location</option>
+                        <option>Nyali</option>
+                        <option>Shanzu</option>
+                        <option>Kilifi</option>
+                        <option>Mtwapa</option>
+                        <option>Vipingo</option>
+                    </select>
+                    <select name="type" aria-label="Type">
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                    <select name="price" aria-label="Max price">
+                        <option value="">Max Price</option>
+                        <option value="50000">KSh 50,000</option>
+                        <option value="250000">KSh 250,000</option>
+                        <option value="1000000">KSh 1,000,000</option>
+                        <option value="5000000">KSh 5,000,000</option>
+                        <option value="10000000">KSh 10,000,000</option>
+                    </select>
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section container">
+            <header class="section-header">
+                <h2>Featured Listings</h2>
+                <p>Handpicked coastal properties in KSh 50,000 – 10,000,000</p>
+            </header>
+            <div id="featuredGrid" class="property-grid"></div>
+            <div class="center">
+                <a class="btn btn-outline" href="sale.html">See all properties</a>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="container two-col">
+                <div>
+                    <h2>Immersive Virtual Tours</h2>
+                    <p>Explore homes from anywhere. We support high‑quality video walkthroughs and 360° tours. Select a property to launch a tour in a beautiful, full‑screen modal.</p>
+                    <div class="stack">
+                        <button class="btn btn-accent" data-open-tour data-tour-type="video" data-tour-src="https://www.youtube.com/embed/l5s1eQJQ9VQ">Watch sample tour</button>
+                        <a class="btn btn-outline" href="developments.html">Explore our latest developments</a>
+                    </div>
+                </div>
+                <div class="media-frame">
+                    <img src="assets/img/interior.jpg" alt="Interior finishes" onerror="this.src='https://placehold.co/640x420?text=Interior'" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <header class="section-header">
+                <h2>Why Nyumbani Kwehu Developers?</h2>
+            </header>
+            <div class="features">
+                <article>
+                    <h3>Local expertise</h3>
+                    <p>Deep knowledge of Kilifi’s coastal market across Nyali, Shanzu, Mtwapa, Vipingo and beyond.</p>
+                </article>
+                <article>
+                    <h3>End‑to‑end services</h3>
+                    <p>From acquisition to development and management, handled by seasoned professionals.</p>
+                </article>
+                <article>
+                    <h3>Transparent pricing</h3>
+                    <p>Listings clearly priced in Kenyan shillings with flexible viewing schedules.</p>
+                </article>
+                <article>
+                    <h3>Innovation first</h3>
+                    <p>Virtual tours, online bookings and data‑driven market research for confident decisions.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nk-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="brand-inline">
+                    <img src="assets/img/logo.png" alt="Nyumbani Kwehu Developers" onerror="this.src='https://placehold.co/40x40?text=N'" />
+                    <strong>Nyumbani Kwehu Developers</strong>
+                </div>
+                <p>Premier coastal real estate agency based in Kilifi, Kenya.</p>
+                <p><strong>Call:</strong> <a href="tel:+254740000000">+254 740 000 000</a><br>
+                <strong>Email:</strong> <a href="mailto:hello@nyumbanikwehu.co.ke">hello@nyumbanikwehu.co.ke</a></p>
+            </div>
+            <nav>
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="sale.html">For Sale</a></li>
+                    <li><a href="rent.html">For Rent</a></li>
+                    <li><a href="developments.html">Developments</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h4>Service areas</h4>
+                <p>Nyali • Shanzu • Kilifi • Mtwapa • Vipingo</p>
+                <a class="btn btn-accent" data-open-booking>Book a Viewing</a>
+            </div>
+        </div>
+        <div class="container legal">
+            <small>© <span id="year"></span> Nyumbani Kwehu Developers. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <dialog id="bookingModal" class="modal">
+        <form method="dialog" class="modal-body" id="bookingForm">
+            <header>
+                <h3>Book a Viewing</h3>
+                <button class="icon-btn" value="cancel" aria-label="Close">✕</button>
+            </header>
+            <div class="grid">
+                <label>
+                    <span>Full name</span>
+                    <input required name="name" type="text" placeholder="Your name" />
+                </label>
+                <label>
+                    <span>Phone</span>
+                    <input required name="phone" type="tel" placeholder="07xx xxx xxx" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input name="email" type="email" placeholder="you@example.com" />
+                </label>
+                <label>
+                    <span>Preferred date</span>
+                    <input name="date" type="date" />
+                </label>
+                <label class="col-2">
+                    <span>Message</span>
+                    <textarea name="message" rows="3" placeholder="Property of interest, timing, etc."></textarea>
+                </label>
+            </div>
+            <menu>
+                <button class="btn" value="cancel">Cancel</button>
+                <button class="btn btn-accent" value="submit">Submit</button>
+            </menu>
+            <div class="after-submit" hidden>
+                <p class="success">Thank you! We have received your request. We will call you shortly.</p>
+                <div class="stack">
+                    <a class="btn btn-outline" href="https://wa.me/254740000000?text=Hi%2C%20I%20submitted%20a%20viewing%20request%20on%20your%20website." target="_blank" rel="noopener">Follow up on WhatsApp</a>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Virtual Tour Modal -->
+    <dialog id="tourModal" class="modal">
+        <div class="modal-body tour-body">
+            <header>
+                <h3>Virtual Tour</h3>
+                <button class="icon-btn" value="cancel" aria-label="Close" onclick="document.getElementById('tourModal').close()">✕</button>
+            </header>
+            <div class="tour-frame">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </dialog>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/listings.js"></script>
+</body>
+</html>
+
