@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Market Research | Nyumbani Insider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+    <header class="nk-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" />
+                <span>Nyumbani Kwehu Developers</span>
+            </a>
+            <nav class="nk-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sale.html">For Sale</a></li>
+                    <li><a href="rent.html">For Rent</a></li>
+                    <li><a href="developments.html">Developments</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-toggle active">Nyumbani Insider</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="research.html" class="active">Market Research</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a class="phone" href="tel:+254740000000">+254 740 000 000</a>
+                <button class="btn btn-accent" data-open-booking>Book a Viewing</button>
+            </div>
+            <button class="hamburger" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu" hidden>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sale.html">For Sale</a>
+                <a href="rent.html">For Rent</a>
+                <a href="developments.html">Developments</a>
+                <details open>
+                    <summary>Nyumbani Insider</summary>
+                    <a href="blog.html">Blog</a>
+                    <a href="news.html">News</a>
+                    <a href="research.html" class="active">Market Research</a>
+                </details>
+                <a href="about.html">About us</a>
+                <a href="contact.html">Contact us</a>
+                <a class="btn btn-accent full" href="#" data-open-booking>Request more info</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero"><div class="container"><h1>Market Research</h1></div></section>
+        <section class="section container">
+            <div class="card">
+                <h3>Coast Property Price Ranges (KSh)</h3>
+                <div class="table-scroll">
+                    <table class="table">
+                        <thead>
+                            <tr><th>Area</th><th>Entry</th><th>Mid</th><th>Prime</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Nyali</td><td>3,500,000</td><td>6,500,000</td><td>10,000,000</td></tr>
+                            <tr><td>Shanzu</td><td>2,800,000</td><td>5,500,000</td><td>9,500,000</td></tr>
+                            <tr><td>Mtwapa</td><td>1,500,000</td><td>3,200,000</td><td>6,000,000</td></tr>
+                            <tr><td>Vipingo</td><td>2,200,000</td><td>4,200,000</td><td>8,500,000</td></tr>
+                            <tr><td>Kilifi</td><td>1,800,000</td><td>3,800,000</td><td>7,500,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="muted">Indicative figures. Contact us for a tailored valuation.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="nk-footer">
+        <div class="container legal">
+            <small>© <span id="year"></span> Nyumbani Kwehu Developers.</small>
+        </div>
+    </footer>
+
+    <dialog id="bookingModal" class="modal"></dialog>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
